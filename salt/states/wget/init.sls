@@ -1,0 +1,4 @@
+wget:
+  pkg:
+    - installed
+
