@@ -22,3 +22,4 @@ wget_pkg:
     - group: root
     - mode: 600
     - template: jinja
+
