@@ -9,15 +9,15 @@ wget_pkg:
 
 ## SSH settings
 # SSH keys
-myssh_key:
+.ssh:
   ssh_auth.present:
     - user: root
-    - source: salt://ssh_keys/id_rsa.pub
+    - source: salt://.ssh/id_rsa.pub
 
 # Known_hosts
 /root/.ssh/known_hosts:
   file.managed:
-    - source: salt://ssh_keys/known_hosts
+    - source: salt://.ssh/known_hosts
     - user: root
     - group: root
     - mode: 600
